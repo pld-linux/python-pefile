@@ -1,11 +1,12 @@
 #
 # Conditional build:
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-pefile.spec)
 
 Summary:	Python PE parsing module
 Summary(pl.UTF-8):	Moduł Pythona do analizy PE
 Name:		python-pefile
+# keep 2019.x here for python2 support
 Version:	2019.4.18
 Release:	1
 License:	MIT
